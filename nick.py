@@ -1,7 +1,6 @@
 import cv2
 from avgfilter import average_filter
 import numpy as np
-import os
 
 
 def nick(image, window=(15, 15), k=-0.2, padding='edge'):
@@ -23,6 +22,7 @@ def _binarize_color(output):
 
 if __name__ == '__main__':
     import sys
+    import os
     import argparse
 
     parser = argparse.ArgumentParser()
